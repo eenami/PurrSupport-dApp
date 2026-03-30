@@ -114,7 +114,7 @@ PurrSupport addresses a real-world problem in urban communities by:
 
 ## Author 😺
 
-Eena Nuesca
+Geena Nuesca
 
 ---
 
