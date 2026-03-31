@@ -2,12 +2,12 @@ import React from 'react';
 import './CatGallery.css';
 
 export default function CatGallery() {
-  const cats = [
-    { name: 'Oliver', need: 'Surgery Fund', image: '/cats/cat_1.png' },
-    { name: 'Luna', need: 'Food & Shelter', image: '/cats/cat_2.png' },
-    { name: 'Shadow', need: 'Vaccinations', image: '/cats/cat_3.png' }
+    const cats = [
+    { name: 'Oliver', need: 'Surgery Fund', image: `${import.meta.env.BASE_URL}cats/cat_1.png` },
+    { name: 'Luna', need: 'Food & Shelter', image: `${import.meta.env.BASE_URL}cats/cat_2.png` },
+    { name: 'Shadow', need: 'Vaccinations', image: `${import.meta.env.BASE_URL}cats/cat_3.png` }
   ];
-
+  
   return (
     <section className="gallery-section container" id="cats">
       <h2 className="section-title">Meet Our Furry Friends</h2>
