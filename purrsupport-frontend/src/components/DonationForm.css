@@ -1,0 +1,82 @@
+.donation-card {
+  padding: 2.5rem;
+  background: rgba(255, 255, 255, 0.75);
+}
+
+.donation-subtitle {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--color-purple-deep);
+  opacity: 0.8;
+}
+
+.donation-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.amount-options {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.amount-btn {
+  flex: 1;
+  padding: 0.75rem;
+  border-radius: 12px;
+  border: 2px solid var(--color-purple-light);
+  background: transparent;
+  color: var(--color-purple-deep);
+  font-family: var(--font-main);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.amount-btn:hover {
+  background: rgba(199, 125, 255, 0.1);
+}
+
+.amount-btn.active {
+  background: var(--color-purple-light);
+  color: var(--color-white);
+  border-color: var(--color-purple-light);
+}
+
+.custom-amount-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.custom-amount-input {
+  width: 100%;
+  padding: 1rem;
+  padding-right: 4rem;
+  border-radius: 12px;
+  border: 2px solid rgba(90, 24, 154, 0.2);
+  font-family: var(--font-main);
+  font-size: 1.1rem;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.custom-amount-input:focus {
+  border-color: var(--color-purple-deep);
+}
+
+.currency-label {
+  position: absolute;
+  right: 1.25rem;
+  font-weight: 700;
+  color: var(--color-purple-deep);
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 1.25rem;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}

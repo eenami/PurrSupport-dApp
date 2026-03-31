@@ -1,0 +1,52 @@
+.header-glass {
+  margin-top: 1.5rem;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 1.5rem;
+  z-index: 100;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.logo-icon {
+  font-size: 2rem;
+}
+
+.logo-text {
+  font-size: 1.75rem;
+  margin: 0;
+  color: var(--color-purple-deep);
+  letter-spacing: -0.5px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-link {
+  color: var(--color-purple-deep);
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.2s;
+}
+
+.nav-link:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+}
