@@ -1,12 +1,13 @@
 # 🐈 PurrSupport: Stray Cat Donation Tracker
 
-## Overview
+PurrSupport is a decentralized application (dApp) built on Stellar that enables transparent, on-chain donations to stray cats in the community.
 
-PurrSupport is a decentralized application (dApp) built on Stellar that enables transparent, on-chain donations to stray cats around the community.
+## Overview
 
 Each cat is assigned a unique ID, and all donations are recorded on-chain using Soroban smart contracts, ensuring full transparency and trust.
 
 ---
+
 ## UI Screenshots (DEMO ONLY)
 <img width="1890" height="925" alt="image" src="https://github.com/user-attachments/assets/ae93e8d8-3cd1-45eb-9629-8404e527f64d" />
 
@@ -15,27 +16,48 @@ Each cat is assigned a unique ID, and all donations are recorded on-chain using 
 <img width="1892" height="772" alt="image" src="https://github.com/user-attachments/assets/988953e9-5903-4046-aa2a-5d7462166cb2" />
 
 ---
-## Problem
 
-Stray and abandoned cats often lack consistent funding for food, shelter, and medical care.
+## Problem & Solution
 
-Donors want to help, but:
-
+**Problem:**
+Stray and abandoned cats often lack consistent funding for food, shelter, and medical care. Donors want to help, but:
 * There is no transparency on where funds go
-* No way to track donations per animal
-* Trust in donation systems is limited
+* There is no centralized/trackable way to see donations per animal
+* Trust in traditional donation systems is limited
 
----
-
-## Solution
-
+**Solution:**
 PurrSupport allows users to:
-
 * Donate XLM to a specific cat ID
 * Track total donations per cat in real time
 * Verify all transactions on-chain
 
 This creates a transparent and trustless donation system for animal welfare.
+
+---
+
+## Timeline
+
+* **Phase 1:** Soroban Smart Contract Development & Unit Testing (Completed)
+* **Phase 2:** Testnet Deployment & MVP Validation (Completed)
+* **Phase 3:** React + Vite Frontend Integration (In Progress)
+* **Phase 4:** Wallet Integration, Polish, and Mainnet Launch (Future)
+
+---
+
+## Stellar Features Used
+
+* **Soroban Smart Contracts:** To trustlessly record and update balances per cat ID.
+* **Low Fees:** Leveraging Stellar's near-zero transaction fees to make micro-donations viable.
+* **Speed:** Taking advantage of Stellar's fast ledger finality (transactions complete in seconds).
+
+---
+
+## Prerequisites
+
+To explore and build the contract locally, you'll need:
+* **Rust:** The latest stable version (`rustup install stable`).
+* **Wasm Target:** Install the target architecture for compiling to WebAssembly (`rustup target add wasm32-unknown-unknown`).
+* **Soroban CLI / Stellar CLI:** Ensure you have the latest Stellar/Soroban CLI installed to deploy and interact with contracts.
 
 ---
 
@@ -46,8 +68,9 @@ This creates a transparent and trustless donation system for animal welfare.
 3. Smart contract records the donation
 4. Total donations per cat are updated on-chain
 5. Anyone can query and verify the data
-   
+
 ---
+
 ## Developer Guide
 
 ### How to Build
@@ -103,6 +126,7 @@ https://stellar.expert/explorer/testnet/contract/CA4JQCGCD6LKYT4VB5HKLSPXCBGWHXI
 * Rust (Soroban SDK)
 * Stellar Testnet
 * Soroban Smart Contracts
+* React + Vite (Frontend)
 
 ---
 
@@ -124,7 +148,6 @@ https://stellar.expert/explorer/testnet/contract/CA4JQCGCD6LKYT4VB5HKLSPXCBGWHXI
 ## Why This Project Matters
 
 PurrSupport addresses a real-world problem in urban communities by:
-
 * Enabling direct, transparent donations
 * Building trust through blockchain
 * Supporting vulnerable stray animals
@@ -133,7 +156,7 @@ PurrSupport addresses a real-world problem in urban communities by:
 
 ## Future Improvements
 
-* Real XLM payment integration
+* Real XLM payment integration via wallets (Freighter)
 * Mobile-friendly frontend (React)
 * Cat profiles with images and location
 * AI prioritization of urgent cases
@@ -150,4 +173,3 @@ Geena Nuesca
 ## License
 
 MIT License
-
