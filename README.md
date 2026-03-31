@@ -46,23 +46,44 @@ This creates a transparent and trustless donation system for animal welfare.
 3. Smart contract records the donation
 4. Total donations per cat are updated on-chain
 5. Anyone can query and verify the data
+   
+---
+## Developer Guide
 
-## Deployment
-
-### Build contract:
-
+### How to Build
+To compile your smart contract to WebAssembly, run:
 ```bash
-cargo build --target wasm32-unknown-unknown --release
+soroban contract build
 ```
 
-### Deploy:
-
+### How to Test
+To run the included unit tests:
 ```bash
-stellar contract deploy \
+cargo test
+```
+
+### How to Deploy
+To deploy your built contract to the Stellar Testnet:
+```bash
+soroban contract deploy \
   --wasm target/wasm32-unknown-unknown/release/purrsupport.wasm \
   --source my-key \
   --network testnet
 ```
+
+### Sample CLI Invocation
+Here is an example calling the MVP function to manually donate to a specific cat using the CLI (using dummy arguments where `cat_id = 1` and `amount` is in XLM/stroops):
+```bash
+soroban contract invoke \
+  --id CA4JQCGCD6LKYT4VB5HKLSPXCBGWHXI2WD4FHEVP7BJZWVIM6GJC35N2 \
+  --source my-key \
+  --network testnet \
+  -- \
+  donate \
+  --cat_id 1 \
+  --amount 100000000
+```
+*(Note: Replace `donate`, `cat_id`, and `amount` with the exact signature defined in your contract's trait.)*
 
 ---
 
