@@ -7,7 +7,7 @@ PurrSupport is a decentralized application (dApp) built on Stellar that enables 
 Each cat is assigned a unique ID, and all donations are recorded on-chain using Soroban smart contracts, ensuring full transparency and trust.
 
 ---
-## Frontend Overview (DEMO ONLY)
+## UI Screenshots (DEMO ONLY)
 <img width="1890" height="925" alt="image" src="https://github.com/user-attachments/assets/ae93e8d8-3cd1-45eb-9629-8404e527f64d" />
 
 <img width="1897" height="782" alt="image" src="https://github.com/user-attachments/assets/8fb50e88-6816-4cf7-81bb-e67bc401d000" />
